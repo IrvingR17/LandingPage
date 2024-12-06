@@ -1,0 +1,513 @@
+@font-face {
+    font-family: "Circular Std";
+    src: url("../fonts/CircularStd-Medium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Circular Std";
+    src: url("../fonts/CircularStd-Black.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+    min-width: 576px
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Circular Std", Arial, sans-serif;
+}
+
+body {
+    padding-top: 68px;
+}
+
+.navbar, footer {
+    height: 73px;
+}
+
+.navbar {
+    z-index: 1030;
+    background: linear-gradient(90deg, #b3df96 0%, #96e6a2 100%);
+}
+
+.navbar-logo {
+    height: 3.8rem;
+    width: auto;
+    padding-left: 20px;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    color: black;
+    background: linear-gradient(90deg, #b3df96 0%, #96e6a2 100%);
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+    .section h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+#hero {
+    position: relative;
+    min-height: 93vh;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: unset; 
+    z-index: -1000;
+}
+
+.content-custom-spacing {
+    padding-top: 4%;
+}
+
+.slogan-container h1 {
+    font-size: 3.9rem;
+    font-weight: bold;
+}
+
+.slogan-container h3 {
+    font-size: 2.25rem;
+    font-weight: 300;
+}
+
+.link-app-container .app-pair {
+    margin-bottom: 2rem;
+}
+
+.qr-image {
+    width: 10rem;
+}
+
+.store-image {
+    height: 4.5rem;
+    transition: all 0.3s ease;
+    outline: 0;
+    border-radius: 0;
+}
+
+    .store-image:hover {
+        outline: 3px solid #ff8657;
+        border-radius: 10px;
+        transform: scale(1.1);
+    }
+
+.phone-img video {
+    width: 80%;
+}
+
+#features .col-4 img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+#features p {
+    position: relative;
+    padding-left: 50px;
+}
+
+.custom-bullet {
+    font-size: 2rem;
+}
+
+    .custom-bullet::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        background-image: url("https://img.pagosdigitales.com/logos/Website/SimboloLanding.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+.features-section {
+    padding-top: 100px;
+    min-height: 93vh;
+    overflow: hidden;
+}
+
+    .features-section img {
+        object-fit: contain;
+    }
+
+.col-left, .col-right, .app-image, .title-word {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.8s ease, transform 1.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.title-word {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+    .title-word:nth-child(1) {
+        transition-delay: 0.4s;
+    }
+
+    .title-word:nth-child(2) {
+        transition-delay: 0.6s;
+    }
+
+.col-left {
+    transform: translateX(-100px);
+}
+
+.col-right {
+    transform: translateX(100px);
+}
+
+    .col-left.animate,
+    .col-right.animate {
+        transform: translateX(0);
+    }
+
+.app-image {
+    width: 80%;
+    height: auto;
+    transform: scale(0.8);
+    transition: opacity 1.8s ease, transform 1.8s ease-in-out;
+}
+
+    .app-image.animate {
+        transform: scale(1);
+    }
+
+.phrase {
+    display: inline-flex;
+    background-color: #ff8657;
+    padding: 0.5rem 1rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    font-size: 2rem;
+}
+
+.carousel-section {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.follow-img {
+    width: 40%;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon {
+    width: 15%;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.slider {
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+    .slider img {
+        width: 126px;
+        height: auto;
+    }
+
+.slide-track {
+    display: flex;
+    width: 100%;
+    padding-bottom: 40px;
+    animation: scroll 50s linear infinite;
+}
+
+    .slide-track:nth-child(2) {
+        animation: scrollReverse 40s linear infinite;
+    }
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scrollReverse {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(50%);
+    }
+}
+
+.slide {
+    height: 100px;
+    width: 250px;
+}
+
+.slider::before,
+.slider::after {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+
+#follow a {
+    display: contents;
+    min-height: 95vh;
+}
+
+@media (max-width: 1555px) {
+    .phone-img video {
+        width: 100%;
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .phone-img video {
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 992px) {
+    .content-custom-spacing {
+        width: 100%;
+        padding-top: 3rem;
+    }
+
+    .slogan-container h1 {
+        font-size: 3rem;
+    }
+
+    .slogan-container h3 {
+        font-size: 2rem;
+    }
+
+
+    .link-app-container .app-pair {
+        width: 100%;
+    }
+
+    .store-image {
+        height: 5rem;
+    }
+
+    .qr-image {
+        display: none;
+    }
+
+    .phone-img {
+        width: 100%;
+    }
+
+        .phone-img video {
+            width: 40%;
+        }
+
+    .custom-bullet {
+        font-size: 1.5rem;
+    }
+
+    .phrase {
+        font-size: 1.5rem;
+    }
+
+    .follow-img {
+        width: 61%;
+    }
+
+    .social-icon {
+        width: 20%;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        position: fixed;
+        top: 8%;
+        left: 68%;
+        width: 32%;
+        height: 18%;
+        background-color: #96e6a2;
+        overflow-y: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .background {
+        content: url("https://img.pagosdigitales.com/logos/Website/BackgroundLPMovil.png");
+    }
+
+    .content-custom-spacing {
+        width: 100%;
+    }
+
+    .slogan-container h1 {
+        font-size: 3rem;
+    }
+
+    .slogan-container h3 {
+        font-size: 1.5rem;
+    }
+
+    .store-image {
+        height: 4rem;
+    }
+
+    .qr-image {
+        display: none;
+    }
+
+    .phone-img {
+        width: 100%;
+    }
+
+        .phone-img video {
+            width: 60%;
+        }
+
+    .col-left, .col-right {
+        transform: translateY(50px);
+    }
+
+        .col-left.animate,
+        .col-right.animate {
+            transform: translateY(0);
+        }
+
+    .features-section .row {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .features-section img {
+        width: 35%;
+    }
+
+    .custom-bullet {
+        font-size: 1.5rem;
+    }
+
+    .phrase {
+        font-size: 1.2rem;
+    }
+
+    .follow-img {
+        width: 55%;
+    }
+
+    .social-icon {
+        width: 25%;
+    }
+}
+
+@media (max-width: 576px) {
+    .background {
+        content: url("https://img.pagosdigitales.com/logos/Website/BackgroundLPMovil.png");
+    }
+
+    .slogan-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .slogan-container h3 {
+        font-size: 1.8rem;
+    }
+
+    .content-custom-spacing {
+        width: 100%;
+        padding-top: 2rem;
+    }
+
+    .link-app-container .app-pair {
+        width: max-content;
+        margin-bottom: 0;
+    }
+
+    .store-image {
+        height: 4rem;
+    }
+
+    .qr-image {
+        display: none;
+    }
+
+    .phone-img {
+        width: 100%
+    }
+
+        .phone-img video {
+            width: 55%;
+        }
+
+    .features-section .row {
+        flex-direction: column; 
+    }
+
+    .col-left, .col-right {
+        padding: 0;
+        text-align: start;
+    }
+
+    .features-section img {
+        width: 50%;
+    }
+
+    .custom-bullet {
+        font-size: 1.3rem;
+    }
+
+    .phrase {
+        font-size: 1rem;
+    }
+
+    .follow-img {
+        width: 85%;
+    }
+
+    .social-icon {
+        width: 40%;
+    }
+}

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="LandingPage.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar d-flex justify-conten-start align-content-center navbar-expand-lg fixed-top">
+        <div class="container">
+            <a href="https://pagosdigitales.com/">
+                <img class="navbar-logo" src="https://img.pagosdigitales.com/logos/Website/LogoPDBlack.png" alt="Pagos Digitales Logo">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Section 1 -->
+    <section id="hero" class="hero-section d-flex align-items-center position-relative">
+        <div class="container-fluid d-flex flex-wrap align-items-center px-4">
+            <div class="content col-md-6 d-flex flex-column justify-content-center content-custom-spacing">
+                <div class="slogan-container text-center">
+                    <h1 class="display-4">Paga todo en un solo lugar</h1>
+                    <div class="h3-spacing text-center">
+                        <h3 class="text-light p-2" style="display: inline; background-color: #ff8657; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);">
+                            Pago <span class="fw-bold">fácil, rápido y seguro</span>
+                        </h3>
+                    </div>
+                </div>
+                <div class="link-app-container d-flex flex-row justify-content-center mt-4 pe-4 ps-sm-4">
+                    <div class="app-pair d-flex flex-column align-items-center px-5 px-sm-1">
+                        <a href="https://play.google.com/store/apps/details?id=com.pagosdigitales.pdmovil&hl=es_MX">
+                            <img src="~/images/googleplay.png" alt="Google Play" class="store-image m-3 m-sm-1">
+                        </a>
+                        <img src="~/images/QRPlayStore.png" alt="QR Play Store" class="qr-image p-1">
+                    </div>
+                    <div class="app-pair d-flex flex-column align-items-center px-5 px-sm-1">
+                        <a href="https://apps.apple.com/mx/app/pagos-digitales/id1519077526">
+                            <img src="~/images/applestore.png" alt="Apple Store" class="store-image m-3 m-sm-1">
+                        </a>
+                        <img src="~/images/QRAppleStore.png" alt="QR Apple Store" class="qr-image p-1">
+                    </div>
+                </div>
+            </div>
+            <div class="phone-img col-md-6 d-flex justify-content-center">
+                <video class="img-fluid pt-5 pt-sm-0" autoplay loop muted>
+                    <source src="https://img.pagosdigitales.com/logos/Website/SmartLanding1.mov" type="video/quicktime">
+                    <source src="https://img.pagosdigitales.com/logos/Website/SmartLanding.webm" type="video/webm">
+                </video>
+            </div>
+        </div>
+        <img src="https://img.pagosdigitales.com/logos/Website/BackgroundLP.png" alt="Fondo" class="background">
+    </section>
+
+    <!-- Section 2 -->
+    <section id="features" class="features-section d-flex flex-column justify-content-center align-items-center px-3 py-5 py-sm-0">
+        <div class="row w-100">
+            <div class="col-12">
+                <h2 class="text-center fw-bold display-1">
+                    <span class="title-word">Nuestra</span>
+                    <span class="title-word">App</span>
+                </h2>
+            </div>
+        </div>
+        <div class="row flex-grow-1 w-100 align-items-stretch">
+            <div class="col-12 col-md-4 order-2 order-md-2 d-flex align-items-center justify-content-center">
+                <img src="https://img.pagosdigitales.com/logos/Website/ScreenshotsApp.png" alt="App Screenshots" class="app-image">
+            </div>
+            <div class="col-12 col-md-4 col-left order-3 order-md-1 d-flex flex-column justify-content-around">
+                <p class="fs-5"></p>
+                <p class="custom-bullet">
+                    <span class="fw-bold">Facilidad de uso:</span> Interfaz intuitiva.
+                </p>
+                <p class="fs-5"></p>
+                <p class="custom-bullet">
+                    <span class="fw-bold">Soporte al cliente:</span> Atención personalizada para problemas con pagos o tu cuenta.
+                </p>
+            </div>
+            <div class="col-12 col-md-4 col-right order-4 order-md-3 d-flex flex-column justify-content-around">
+                <p class="custom-bullet">
+                    <span class="fw-bold">Seguridad:</span> Contamos con protección a la información del usuario.
+                </p>
+                <p class="fs-5"></p>
+                <p class="custom-bullet">
+                    <span class="fw-bold">Variedad de servicios:</span> Paga luz, agua, gas, internet y más.
+                </p>
+                <p class="fs-5"></p>
+            </div>
+        </div>
+        <div class="row w-100 mt-4">
+            <div class="col-12 text-center mb-3">
+                <div class="phrase text-light p-2">
+                    ¡Descárgala hoy y empieza a disfrutar de la comodidad que mereces!
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section id="carousel" class="carousel-section d-flex flex-wrap justify-content-center align-items-center px-3">
+        <div style="padding-bottom: 80px;">
+            <div class="phrase-2 container-sm">
+                <h2 class="text-center my-4" style="padding: 40px 0;">
+                    + de 100 Servicios
+                </h2>
+            </div>
+
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/aguapuebla_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/arabela_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/att_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/avon_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/axtel.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/bluetelecom_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/ceaqueretaro_activo (1).png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/cespe_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/cespm_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/cespt_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/cfe_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/cinepolis.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/crunchy.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/dish_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/ecogas.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/ecogas_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/fibratv_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/fuller_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/ilusion_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/izzi_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/jmas_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/jmaschih.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/jmascuau.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/jmasdel.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/jmasjurz.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/lbel_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/maxigas_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/megacable_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/mexgas.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/miaa.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/MIAA_activo_1.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/movistar.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/netflix.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/nintendo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/play.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/simas torreon.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/sky_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/stanhome_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/startv.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/steam.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/telcel.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/telmex_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/telnor_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/totalplay_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/tupperware_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/unefon.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/vetv_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/virginmov.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/xbox.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/yvesrocher_activo.png" /></div>
+                </div>
+
+                <div class="slide-track">
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/aguapuebla_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/arabela_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/att_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/avon_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/axtel.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/bluetelecom_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/ceaqueretaro_activo (1).png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/cespe_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/cespm_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/cespt_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/cfe_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/cinepolis.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/crunchy.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/dish_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/ecogas.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/ecogas_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/fibratv_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/fuller_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/ilusion_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/izzi_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/jmas_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/jmaschih.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/jmascuau.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/jmasdel.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/jmasjurz.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/lbel_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/maxigas_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/megacable_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/mexgas.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/miaa.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/MIAA_activo_1.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/movistar.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/netflix.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/nintendo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/play.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/simas torreon.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/sky_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/stanhome_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/startv.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/steam.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/telcel.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/telmex_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/telnor_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/totalplay_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/tupperware_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/unefon.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/vetv_activo.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/virginmov.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/xbox.png" /></div>
+                    <div class="slide"><img src="https://img.pagosdigitales.com/logos/Website/Servicios/yvesrocher_activo.png" /></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="follow" class="d-flex flex-column justify-content-center align-items-center pb-5 mb-5">
+        <div class="row w-100">
+            <div class="col-12 d-flex justify-content-center align-items-center">
+                <img src="https://img.pagosdigitales.com/logos/Website/MujerTelefono.png" alt="Mujer Telefono App" class="follow-img h-auto pb-5" />
+            </div>
+        </div>
+        <div class="row w-100">
+            <div class="col-4"></div>
+            <div class="col-4 d-flex align-items-center justify-content-center pt-5">
+                <a href="https://www.facebook.com/PagosDigitales1">
+                    <img src="https://img.pagosdigitales.com/logos/Website/FacebookIcon.png" alt="Facebook Icon" class="social-icon h-auto mx-5 mx-sm-3" />
+                </a>
+                <a href="https://x.com/pagosdigitales_">
+                    <img src="https://img.pagosdigitales.com/logos/Website/XIcon.png" alt="X Icon" class="social-icon h-auto mx-5 mx-sm-3" />
+                </a>
+                <a href="https://www.instagram.com/pagosdigitales/">
+                    <img src="https://img.pagosdigitales.com/logos/Website/InstagramIcon.png" alt="Instagram Icon" class="social-icon h-auto mx-5 mx-sm-3" />
+                </a>
+                <a href="https://www.tiktok.com/@@pagosdigitales?_t=8rnkAY1I69o&_r=1">
+                    <img src="https://img.pagosdigitales.com/logos/Website/TikTokIcon.png" alt="Tik Tok Icon" class="social-icon h-auto mx-5 mx-sm-3" />
+                </a>
+            </div>
+            <div class="col-4"> </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-black d-flex align-items-center">
+        <div class="container text-center">
+            <a href="https://pagosdigitales.com/" style="text-decoration: none;"><p class="mb-0" style="color: black;">Copyright © 2024 PagosDigitales.com</p></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const options = {
+            root: null,
+            threshold: 0.4 
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                } else {
+                    entry.target.classList.remove('animate');
+                }
+            });
+        }, options);
+
+        const elementsToAnimate = document.querySelectorAll('.col-left, .col-right, .app-image, .title-word');
+        elementsToAnimate.forEach(el => observer.observe(el));
+    });
+</script>
